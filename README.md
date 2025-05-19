@@ -86,8 +86,8 @@ Basic CI/CD has already been setup in the .github folder, including automatic bu
 ### Automatic Publishing to PYPI
 
 This requires adding your PYPI token in the repo or organization secrets as `PYPI`.
-If you don't need this feature, go to [.github/workflows/release.yaml]({{cookiecutter.project_folder}}/.github/workflows/release.yml) and delete Lines 95~99.
-By default the package is uploaded to test.pypi.org. For publishing to pypi.org delete lines Lines 97~99.
+If you don't need this feature, go to [.github/workflows/release.yaml]({{cookiecutter.project_folder}}/.github/workflows/release.yml) and delete Lines 95-99.
+By default the package is uploaded to test.pypi.org. For publishing to pypi.org delete lines Lines 97-99.
 
 ## License
 
