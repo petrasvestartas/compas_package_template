@@ -6,7 +6,7 @@ This README provides instructions on how to use C++ and Python files together wi
 
 ### 1. Adding nanobind Extensions to CMakeLists.txt
 
-Add the following lines to your CMakeLists.txt to enable the nanobind extensions:
+Add the following lines at the end of your CMakeLists.txt to enable the nanobind extensions:
 
 ```cmake
 add_nanobind_extension(_vectors_copy src/vectors_copy.cpp)
@@ -32,31 +32,20 @@ Place your C++ implementation files in the `src` folder. These files should impl
 
 ### 3. Python Usage Files
 
-Create Python scripts in the `scripts` folder to use the compiled extensions. For example, if you've compiled the `_vectors_copy` extension, you can import it in Python as:
+Run python examples files from `tutorial` folder. For example:
 
-```python
-import _vectors_copy
-
-# Use functions and classes defined in vectors_copy.cpp
-```
+- `src/vectors_copy.py`
+- `src/vectors_reference.py`
+- `src/class_primitives.py`
+- `src/class_unique_pointer.py`
+- `src/class_shared_pointer.py`
+- `src/eigen.py`
+- `src/ndarray.py`
 
 ## Building and Running
 
-1. Configure the project with CMake:
    ```
-   mkdir build
-   cd build
-   cmake ..
-   ```
-
-2. Build the project:
-   ```
-   cmake --build .
-   ```
-
-3. Run Python scripts from the `scripts` folder:
-   ```
-   python ../scripts/your_script.py
+   pip install --no-build-isolation -ve .
    ```
 
 ## Example Workflow
@@ -66,9 +55,3 @@ import _vectors_copy
 3. Build the project
 4. Create a Python script in `scripts/use_my_extension.py` that imports and uses `_my_extension`
 5. Run your Python script
-
-## Notes
-
-- Extension modules are prefixed with an underscore by convention
-- Make sure to include proper error handling in both C++ and Python code
-- Use nanobind's type conversion features for seamless integration
