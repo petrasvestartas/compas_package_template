@@ -1,4 +1,4 @@
-# COMPAS package template
+# COMPAS package template for C++/Python binding 
 
 Cookiecutter template for COMPAS extensions.
 
