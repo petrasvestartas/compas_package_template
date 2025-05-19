@@ -16,6 +16,8 @@ replacing all the generic info that finds surrounded by templating tags `{{` and
 * Automation of common tasks for development workflow based on [pyinvoke](http://www.pyinvoke.org/) (generate documentation, run tests, check format, etc.)
 * [EditorConfig](https://editorconfig.org/) integration
 * Minimal Github workflows for CI/CD
+* Example project for nanobind
+* Python wheel building via cibuildwheel and scikit-build-core
 
 ## What's included
 
@@ -67,6 +69,8 @@ Add the project files to the new `git` repo:
 git add .
 git commit -m "Initial commit"
 ```
+
+[Detailed instructions](https://docs.google.com/presentation/d/1HL4o8cadvuZlQDsdYlslzeDhDVvTUlPdk9zTSn5fsLA/edit?slide=id.g9da5d6f0fe_0_0#slide=id.g9da5d6f0fe_0_0)
 
 ## Additional settings
 
